@@ -8,7 +8,7 @@ from firebase_admin import storage
 
 
 app = Flask(__name__)
-cred = credentials.Certificate("src/key.json")
+cred = credentials.Certificate("key.json")
 firebase_admin.initialize_app(cred, {'databaseURL': 'https://eata-project-default-rtdb.firebaseio.com/',
                                      'storageBucket': 'eata-project.appspot.com'})
 
