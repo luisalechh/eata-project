@@ -625,7 +625,22 @@ def get_images_t1lima():
         return jsonify({'image_urls': image_urls[1:]})
     else:
         return jsonify({'image_urls': []})
-
+    
+@app.route('/get_images_t1limametropolitana')
+def get_images_t1limametropolitana():
+    bucket = storage.bucket()
+    images = bucket.list_blobs(prefix='Images/T1Lima2/')
+    existing_images = [image for image in images if image.exists()]
+    image_urls = [image.generate_signed_url(
+                version="v4",
+                expiration=timedelta(days=7),
+                method="GET"
+            ) for image in existing_images]
+    if len(image_urls) > 1:
+        return jsonify({'image_urls': image_urls[1:]})
+    else:
+        return jsonify({'image_urls': []})
+    
 @app.route('/get_images_t1loreto')
 def get_images_t1loreto():
     bucket = storage.bucket()
