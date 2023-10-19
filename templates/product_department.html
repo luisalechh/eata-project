@@ -86,11 +86,17 @@ function updateImages() {
         </div>
     </div>
     <div class="row">
-        <div class="col-md-6 col-lg-6 mt-5">
+        <div class="col-md-8 col-lg-8 mt-5">
+            {% if numbertext_product == 'one' %}
             <p class="">Fecha y hora de la imagen: </p><h1 class="h6" id="image-name"></h1>
+            {% endif %}
             <img  id="current-image"  style="width: 100%;" alt="type{{product_number}}">
+            {% if numbertext_product == 'one' %}
+            <img src="{{ url_for('static', filename='img/barra_icon_product_one.png') }}" width="100%;">
+            <p class="h5">mml/h</p>
+            {% endif %}
         </div>
-        <div class="col-md-6 col-lg-6 mt-5">
+        <div class="col-md-4 col-lg-4 mt-5">
             <link rel="stylesheet" href="{{url_for('static',filename='css/map.css')}}">
             <a href="{{url_for('product',product_name=numbertext_product)}}" class="btn btn-primary custom-btn" id="boton-mapa-peru">Mapa del Perú </a>
             
@@ -251,7 +257,7 @@ function updateImages() {
                     <circle cx="766.9" cy="1359" id="2">
                     </circle>
                 </svg>
-            </div>
+            </a>
         </div>
         
     </div>

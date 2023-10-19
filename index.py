@@ -21,12 +21,17 @@ numerotexto_producto = [
 departments = [
     'amazonas', 'ancash', 'apurimac', 'arequipa','ayacucho', 'cajamarca', 'cusco', 'huancavelica', 'huanuco','ica','junin','lalibertad','lambayeque','lima','limametropolitana','loreto','madrededios','moquegua','pasco','piura','puno','sanmartin','tacna','tumbes','ucayali'
 ]
+
+title_department = [
+    'Amazonas', 'Ancash', 'Apurimac', 'Arequipa','Ayacucho', 'Cajamarca', 'Cusco', 'Huancavelica', 'Huanuco','Ica','Junin','La Libertad','Lambayeque','Lima','Lima Metropolitana','Loreto','Madre de Dios','Moquegua','Pasco','Piura','Puno','San Martin','Tacna','Tumbes','Ucayali'
+]
+
 number_product = [
     '1', '2', '3', '4', '5', '6', '7', '8'
 ]
 
 title_product = [
-    'Estimador de precipitación', 'Incremento de vapor de agua', 'Altura de la base de la nube', 'Capas de nieve nubes', 'Cielo despejado', 'Fase superior de nube', 'Tasa de lluvia', 'Agua precipitable total'
+    'Estimador de precipitación', 'Incremento de vapor de agua', 'Altura de la base de la nube', 'Capas de nieve nubes', 'Máscara de nubes', 'Tasa de lluvia' , 'Agua precipitable total', 'Fase superior de nube'
 ]
 
 @app.route('/')
