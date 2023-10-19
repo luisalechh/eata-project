@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{%block title%}EATA UNI{% endblock %}</title>
+    <title>{%block title%}EATA{% endblock %}</title>
     
     <!-- google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +36,7 @@
      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
      {% block scripts_comentarios %}{% endblock %}
      {% block scripts_mostrarimagenes %}{% endblock %}
-
+     {% block links %}{% endblock %}
 
 </head>
 <body>
@@ -59,7 +59,7 @@
         </div>
     </nav>
 
-    <div class="container mt-5">
+ 
         {% block contenido %}
           <div class="row">
             <div class="col-md-12 mt-5">
@@ -69,8 +69,7 @@
           </div>
           </div>
         {% endblock %}
-    </div>
-    
+
     <!-- footer -->
     <footer class="container py-5">
         <footer class="footer">
