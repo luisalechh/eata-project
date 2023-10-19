@@ -26,7 +26,7 @@ number_product = [
 ]
 
 title_product = [
-    'Estimador de precipitación', 'Incremento de vapor de agua', 'Altura de la base de la nube', 'Capas de nieve nubes', 'Titulo del producto cinco', 'Titulo del producto seis', 'Titulo del producto siete', 'Titulo del producto ocho'
+    'Estimador de precipitación', 'Incremento de vapor de agua', 'Altura de la base de la nube', 'Capas de nieve nubes', 'Cielo despejado', 'Fase superior de nube', 'Tasa de lluvia', 'Agua precipitable total'
 ]
 
 @app.route('/')
