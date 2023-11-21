@@ -31,7 +31,14 @@ number_product = [
 ]
 
 title_product = [
-    'Estimador de precipitación', 'Incremento de vapor de agua', 'Altura de la base de la nube', 'Capas de nieve nubes', 'Máscara de nubes', 'Tasa de lluvia' , 'Agua precipitable total', 'Fase superior de nube'
+    'Estimador de precipitación',
+  'Temperatura de la superficie terrestre', 
+  'Altura de la cima de la nube', 
+  'Temperatura en la cima de las nubes',
+  'Máscara de Cielo despejado', 
+  'Índice de precipitaciones' ,
+  'Total de agua precipitable',
+  'Fase de la cima de la nube'
 ]
 
 @app.route('/')
