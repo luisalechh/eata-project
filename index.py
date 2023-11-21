@@ -146,6 +146,41 @@ def get_producto_tres(departamento):
     value = ref.get()
     return jsonify({'value': value})
 
+# producto cuatro comentarios
+@app.route('/get_producto_cuatro/<departamento>', methods=['GET'])
+def get_producto_cuatro(departamento):
+    ref = db.reference(f'/comentarios/producto_cuatro_{departamento.capitalize()}')
+    value = ref.get()
+    return jsonify({'value': value})
+
+# producto cinco comentarios
+@app.route('/get_producto_cinco/<departamento>', methods=['GET'])
+def get_producto_cinco(departamento):
+    ref = db.reference(f'/comentarios/producto_cinco_{departamento.capitalize()}')
+    value = ref.get()
+    return jsonify({'value': value})
+
+# producto seis comentarios
+@app.route('/get_producto_seis/<departamento>', methods=['GET'])
+def get_producto_seis(departamento):
+    ref = db.reference(f'/comentarios/producto_seis_{departamento.capitalize()}')
+    value = ref.get()
+    return jsonify({'value': value})
+
+# producto siete comentarios
+@app.route('/get_producto_siete/<departamento>', methods=['GET'])
+def get_producto_siete(departamento):
+    ref = db.reference(f'/comentarios/producto_siete_{departamento.capitalize()}')
+    value = ref.get()
+    return jsonify({'value': value})
+  
+# producto ocho comentarios
+@app.route('/get_producto_ocho/<departamento>', methods=['GET'])
+def get_producto_ocho(departamento):
+    ref = db.reference(f'/comentarios/producto_ocho_{departamento.capitalize()}')
+    value = ref.get()
+    return jsonify({'value': value})
+
 def get_images_by_type_and_department(image_type, department):
     prefix = f'Images/T{image_type}{department.capitalize()}/'
     bucket = storage.bucket()
